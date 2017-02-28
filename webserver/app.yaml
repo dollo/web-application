@@ -1,0 +1,10 @@
+application: webserver
+version: 1
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /miserver.php
+  script: miserver.php
+- url: /.*
+  script: index.php
